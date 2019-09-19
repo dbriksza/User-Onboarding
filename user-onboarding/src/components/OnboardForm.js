@@ -33,9 +33,10 @@ const OnboardForm = ({ values, errors, touched, status }) => {
       </Form>
       {users.map(user => (
         <ul key={user.id}>
-          <li>Name:{user.name}</li>
+          <li>Name: {user.name}</li>
           <li>Email: {user.email}</li>
           <li>Password: {user.password}</li>
+          <li>Accepted ToS: {user.ToS.toString()}</li>
         </ul>
       ))}
     </div>
