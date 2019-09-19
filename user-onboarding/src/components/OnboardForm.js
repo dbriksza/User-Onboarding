@@ -33,9 +33,9 @@ const OnboardForm = ({ values, errors, touched, status }) => {
       </Form>
       {users.map(user => (
         <ul key={user.id}>
-          <li>Species:{user.name}</li>
-          <li>Size: {user.email}</li>
-          <li>Diet: {user.password}</li>
+          <li>Name:{user.name}</li>
+          <li>Email: {user.email}</li>
+          <li>Password: {user.password}</li>
         </ul>
       ))}
     </div>
